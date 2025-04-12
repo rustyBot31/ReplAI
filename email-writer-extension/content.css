@@ -1,0 +1,81 @@
+/* Container for split button */
+.ai-reply-split-container {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-right: 4px;
+    position: relative; /* needed for dropdown positioning */
+
+}
+
+/* Main Reply Button Styles */
+.ai-reply-button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    color: white;
+    border-radius: 4px 0 0 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    border-right: none;
+}
+
+.ai-reply-button:hover {
+    background-color: #0056b3;
+}
+
+/* Dropdown Toggle Button Styles */
+.ai-reply-dropdown-toggle {
+    padding: 10px 12px;
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    position: relative;
+}
+
+/* Dropdown Arrow */
+.ai-reply-dropdown-toggle::after {
+    content: "▲";
+    font-size: 10px;
+    margin-left: 4px;
+}
+
+/* Drop-Up Menu Styles */
+.ai-reply-dropdown-menu {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    background-color: white;
+    min-width: 160px;
+    margin-bottom: 4px;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    z-index: 1000;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Dropdown Items */
+.ai-reply-dropdown-menu .dropdown-item {
+    cursor: pointer;
+    color: #333;
+    padding: 10px 15px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.ai-reply-dropdown-menu .dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show menu when open */
+.ai-reply-dropdown.open .ai-reply-dropdown-menu {
+    display: block;
+}

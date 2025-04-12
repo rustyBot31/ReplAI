@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif, monospace;
+    background: linear-gradient(135deg, #1f3b63, #5a2a83); /* Updated to Navy and Royal Blue */
+    min-height: 100vh;
+    color: #fff;
+    transition: background 0.5s ease;
+  }
+  
+  /* App container styling */
+  #root {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 40px;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  /* Glass-style container */
+  .glass-container {
+    background: rgba(20, 40, 80, 0.3);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+  }
+  
+  /* Typewriter Effect for Header */
+  .typewriter-header {
+    overflow: hidden;
+    border-right: 0.15em solid #00A8CC;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.05em;
+    animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #00A8CC; }
+  }
+  
+  /* Typewriter Effect for Description Box */
+  .typewriter-description {
+    overflow: hidden;
+    border-right: 0.15em solid #00A8CC;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.05em;
+    
+  }
+  
+  @keyframes typing-desc {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #00A8CC; }
+  }
+  
+  /* Button hover effects */
+  .MuiButton-contained:hover {
+    background-color: #1C88B0;
+  }
+  
+  .MuiButton-outlined:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Input field background */
+  .MuiOutlinedInput-root {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+  }
+  

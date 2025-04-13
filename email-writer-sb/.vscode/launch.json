@@ -12,10 +12,10 @@
         },
         {
             "type": "java",
-            "name": "EmailWriterApplication",
+            "name": "EmailWriterSbApplication",
             "request": "launch",
-            "mainClass": "com.email.email_writer.EmailWriterApplication",
-            "projectName": "email-writer",
+            "mainClass": "com.email.email_writer_sb.EmailWriterSbApplication",
+            "projectName": "email-writer-sb",
             "env": {
                 "GEMINI_API_URL": "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=",
                 "GEMINI_API_KEY": ""

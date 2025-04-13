@@ -1,4 +1,4 @@
-package com.email.email_writer.Entity;
+package com.email.email_writer_sb.Entity;
 
 import lombok.Data;
 

@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.email</groupId>
-	<artifactId>email-writer</artifactId>
+	<artifactId>email-writer-sb</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>email-writer</name>
-	<description>Demo project for Spring Boot</description>
+	<name>email-writer-sb</name>
+	<description>AI-powered Email Reply Generator</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -34,6 +34,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-webflux</artifactId>
+		</dependency>
 
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -46,11 +50,7 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-webflux</artifactId>
-		</dependency>
-		<dependency>
-		    <groupId>io.projectreactor</groupId>
+			<groupId>io.projectreactor</groupId>
 			<artifactId>reactor-test</artifactId>
 			<scope>test</scope>
 		</dependency>
@@ -84,4 +84,5 @@
 			</plugin>
 		</plugins>
 	</build>
+
 </project>

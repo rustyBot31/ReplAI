@@ -1,4 +1,4 @@
-package com.email.email_writer.Service;
+package com.email.email_writer_sb.Service;
 
 import java.util.Map;
 
@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
-import com.email.email_writer.Entity.EmailRequest;
+import com.email.email_writer_sb.Entity.EmailRequest;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -21,7 +21,7 @@ public class EmailGenService {
 
     @Value("${gemini.api.url}")
     private String geminiApiUrl;
-
+    
     @Value("${gemini.api.key}")
     private String geminiApiKey;
 
@@ -70,5 +70,4 @@ public class EmailGenService {
         prompt.append("\nOriginal email : \n").append(emailReq.getEmailContent());
         return prompt.toString();
     }
-
 }

@@ -47,8 +47,32 @@ ReplAI/<br>
 ├── email-writer-extension/         // Chrome extension for Gmail integration <br>          
 ├── README.md <br>
 
-<h2>🛠️ Setup Instructions</h2>
+
+<
 <p>Follow the instructions below and execute the commands to get ReplAI on your system!(-> implies its a command you have to run)</p>
+<h2>🧰 System Prerequisites</h2>
+<ul>
+ <li>
+  <b>Backend</b>
+ <ul>
+  <li>Java Development Kit (JDK): Ensure Java 21+ is installed.</li>
+  <li>Maven: Required for building the project.</li>
+  <li>Set the following environment variables with your Gemini API credentials:
+  <ul>
+   <li>GEMINI_API_URL: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=</li>
+   <li>GEMINI_API_KEY: Your actual API key.</li>
+  </ul>
+  </li>
+ </ul>
+ </li>
+ <li>
+  <b>Frontend (React with Vite)</b>
+  <ul>
+   <li>Node.js: Ensure Node.js (preferably version 18 or above) is installed.
+  </ul>
+ </li>
+</ul>
+<h2>🛠️ Setup Instructions</h2>
 <ol>
 <li><b>Clone the repository</b><br>
  -> git clone https://github.com/rustyBot31/ReplAI.git<br>
@@ -57,8 +81,6 @@ ReplAI/<br>
 <li><b>Backend</b><br>
 <ol>
  <li>Open the folder email-writer-sb on your code editor</li>
-<li>Move to the folder .vscode (if you are using vscode) and in the launch.json file, add your gemini api key next to the "GEMINI_API_KEY" field as a string
-(If you are using some other ide, make sure to add "GEMINI_API_KEY" and "GEMINI_API_URL" as environment variables alongwith the values. You can refer to the launch.json file I have provided, and yeah remove the .vscode folder if on some other ide).</li>
 <li>Move to the class EmailWriterSbApplication and click 'Run'. </li>
 </ol>
 </li>

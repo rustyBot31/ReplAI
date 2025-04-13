@@ -15,8 +15,8 @@ import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequestMapping("/api/email")
-@RequiredArgsConstructor
 @CrossOrigin(origins = "*")
+@RequiredArgsConstructor
 public class EmailGenControl {
 
     @Autowired
@@ -28,3 +28,5 @@ public class EmailGenControl {
         return ResponseEntity.ok(response);
     }
 }
+
+

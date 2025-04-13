@@ -56,6 +56,8 @@ ReplAI/<br>
 </li>
 <li><b>Backend</b><br>
 Open the folder email-writer-sb on your code editor<br>
+Move to the folder .vscode (if you are using vscode) and in the launch.json file, add your gemini api key next to the "GEMINI_API_KEY" field as a string
+(If you are using some other ide, make sure to add "GEMINI_API_KEY" and "GEMINI_API_URL" as environment variables alongwith the values. You can refer to the launch.json file I have provided, and yeah remove the .vscode folder if on some other ide).
 Move to the class EmailWriterSbApplication and click 'Run' 
 </li>
 <li><b>Frontend</b><br>

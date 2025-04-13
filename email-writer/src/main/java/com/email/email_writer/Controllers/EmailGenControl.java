@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
 import com.email.email_writer.Entity.EmailRequest;
 import com.email.email_writer.Service.EmailGenService;
 
-import lombok.Data;
+import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequestMapping("/api/email")
-@Data
+@RequiredArgsConstructor
 @CrossOrigin(origins = "*")
 public class EmailGenControl {
 

@@ -10,10 +10,7 @@ import com.email.email_writer.Entity.EmailRequest;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import lombok.Data;
-
 @Service
-@Data
 public class EmailGenService {
     
     private final WebClient webClient;

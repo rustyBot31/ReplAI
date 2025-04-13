@@ -42,7 +42,7 @@ Enhance your Gmail experience with the ReplAI browser extension:
 
 <h2>📂 Project Structure</h2>
 ReplAI/<br>
-├── email-writer/      // Spring Boot API for AI reply generation <br>            
+├── email-writer-sb/      // Spring Boot API for AI reply generation <br>            
 ├── email-writer-react/       //  React + Vite app <br>            
 ├── email-writer-extension/         // Chrome extension for Gmail integration <br>          
 ├── README.md <br>
@@ -55,11 +55,11 @@ ReplAI/<br>
  -> cd ReplAI
 </li>
 <li><b>Backend</b><br>
--> cd email-writer<br>
--> ./mvnw spring-boot:run
+Open the folder email-writer-sb on your code editor<br>
+Move to the class EmailWriterSbApplication and click 'Run' 
 </li>
 <li><b>Frontend</b><br>
--> cd email-writer-react<br>
+Open the folder email-writer-react on your code editor and run the commands on tthe terminal<br>
 -> npm install<br>
 -> npm run dev
 </li>
@@ -67,8 +67,8 @@ ReplAI/<br>
 <ol>
  <li>Navigate to chrome://extensions in your browser.</li>
  <li>Enable Developer Mode.</li>
- <li>Click Load Unpacked and select the extension folder.</li>
- <li>Select the folder ReplAI.</li>
+ <li>Click Load Unpacked</li>
+ <li>Select the folder ReplAI and select the email-writer-extension folder</li>
  <li>Pin the extension.</li>
 </ol>
 </li>

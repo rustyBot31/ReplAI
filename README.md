@@ -1,104 +1,102 @@
-# 📬ReplAI – AI-Powered Email Reply Assistant
+# 📬 ReplAI – AI-Powered Email Reply Assistant
 
-ReplAI is a full-stack AI email assistant designed to generate context-aware email replies based on the content and desired tone (e.g., professional, casual). It comprises:
-<ul>
- <li>A web application built with Spring Boot (backend) and React with Vite (frontend), styled using Material UI.</li>
- <li>A Gmail browser extension that integrates directly into the Gmail interface, adding an "AI Reply" button to the compose toolbox.</li>
- <li>Integration with Gemini as the AI agent for generating intelligent responses.</li>
-</ul>
+ReplAI is a full-stack AI email assistant designed to generate context-aware email replies based on the content and desired tone (e.g., professional, casual). It includes:
 
- <h2>🚀Features</h2>
- <ul>
- <li>✉️ Generate AI-powered replies to emails.</li>
- <li>🎯 Select the tone of the reply: Professional, Casual, etc.</li>
- <li>🧩 Gmail extension for seamless integration.</li>
- <li>⚡ Fast and responsive UI with Vite and Material UI.</li>
-</ul>
+- 🌐 A **web application** built with **Spring Boot (backend)** and **React with Vite (frontend)**, styled using **Material UI**.
+- 🧩 A **Gmail browser extension** that integrates directly into the Gmail interface, adding an "AI Reply" button to the compose toolbox.
+- 🤖 Integration with **Gemini** as the AI agent for generating intelligent responses.
 
-<h2>🧠 Tech Stack</h2>
-<ul>
- <li><b>Frontend</b>	- React, Vite, Material UI</li>
- <li><b>Backend</b>	- Spring Boot(Java)</li>
- <li><b>AI Agent</b>	- Gemini</li>
- <li><b>Extension</b>	- Manifest V3</li>
- <li><b>Deployment</b>	- GitHub Pages/Any Server</li>
-</ul>
+---
 
-<h2>🖥️ Web Application</h2>
+## 🚀 Features
+
+- ✉️ Generate AI-powered replies to emails.
+- 🎯 Choose the tone of the reply: Professional, Casual, etc.
+- 🧩 Gmail extension for seamless Gmail integration.
+- ⚡ Fast and responsive UI with **Vite** and **Material UI**.
+
+---
+
+## 🧠 Tech Stack
+
+- **Frontend**: React, Vite, Material UI  
+- **Backend**: Spring Boot (Java)  
+- **AI Agent**: Gemini  
+- **Extension**: Chrome Extension (Manifest V3)  
+- **Deployment**: GitHub Pages / Any Server  
+
+---
+
+## 🖥️ Web Application
+
 The ReplAI web application allows users to:
-<ul>
-<li>Input the original email content.</li>
-<li>Select the desired tone for the reply.</li>
-<li>Generate and copy the AI-generated reply.</li>
-</ul>
+- Input the original email content.
+- Select the desired tone for the reply.
+- Generate and copy the AI-generated reply.
 
-<h2>📎 Gmail Browser Extension</h2>
+---
+
+## 📎 Gmail Browser Extension
+
 Enhance your Gmail experience with the ReplAI browser extension:
-<ul>
-<li>🔘 Adds an "AI Reply" button to the Gmail compose box.</li>
-<li>📥 Automatically fetches the email content.</li>
-<li>🤖 Generates contextual replies instantly based on tone set by user</li>
-</ul>
+- 🔘 Adds an "AI Reply" button to the Gmail compose box.
+- 📥 Automatically fetches the email content.
+- 🤖 Generates contextual replies instantly based on tone selected by the user.
 
-<h2>📂 Project Structure</h2>
-ReplAI/<br>
-├── email-writer-sb/      // Spring Boot API for AI reply generation <br>            
-├── email-writer-react/       //  React + Vite app <br>            
-├── email-writer-extension/         // Chrome extension for Gmail integration <br>          
-├── README.md <br>
+---
 
+## 📂 Project Structure
 
-<
-<p>Follow the instructions below and execute the commands to get ReplAI on your system!(-> implies its a command you have to run)</p>
-<h2>🧰 System Prerequisites</h2>
-<ul>
- <li>
-  <b>Backend</b>
- <ul>
-  <li>Java Development Kit (JDK): Ensure Java 21+ is installed.</li>
-  <li>Maven: Required for building the project.</li>
-  <li>Set the following environment variables with your Gemini API credentials:
-  <ul>
-   <li>GEMINI_API_URL: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=</li>
-   <li>GEMINI_API_KEY: Your actual API key.</li>
-  </ul>
-  </li>
- </ul>
- </li>
- <li>
-  <b>Frontend (React with Vite)</b>
-  <ul>
-   <li>Node.js: Ensure Node.js (preferably version 18 or above) is installed.
-  </ul>
- </li>
-</ul>
-<h2>🛠️ Setup Instructions</h2>
-<ol>
-<li><b>Clone the repository</b><br>
- -> git clone https://github.com/rustyBot31/ReplAI.git<br>
- -> cd ReplAI
-</li>
-<li><b>Backend</b><br>
-<ol>
- <li>Open the folder email-writer-sb on your code editor</li>
-<li>Move to the class EmailWriterSbApplication and click 'Run'. </li>
-</ol>
-</li>
-<li><b>Frontend</b><br>
-Open the folder email-writer-react on your code editor and run the commands on tthe terminal<br>
--> npm install<br>
--> npm run dev
-</li>
-<li><b>Browser Extension</b><br>
-<ol>
- <li>Navigate to chrome://extensions in your browser.</li>
- <li>Enable Developer Mode.</li>
- <li>Click Load Unpacked</li>
- <li>Select the folder ReplAI and select the email-writer-extension folder</li>
- <li>Pin the extension.</li>
-</ol>
-</li>
-</ol>
+```bash
+ReplAI/
+├── email-writer-sb/ // Spring Boot API for AI reply generation
+├── email-writer-react/ // React + Vite app
+├── email-writer-extension/ // Chrome extension for Gmail integration
+├── README.md
+```
 
-<h2>🙌 Contributing</h2>
+---
+
+## 🧰 System Prerequisites
+
+### Backend
+- Java Development Kit (JDK) 21+
+- Maven
+- Environment Variables:
+  - `GEMINI_API_URL`: `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=`
+  - `GEMINI_API_KEY`: *Your actual API key*
+
+### Frontend
+- Node.js (version 18 or above)
+
+---
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/rustyBot31/ReplAI.git
+cd ReplAI
+```
+
+### 2. Backend Setup
+- Open the folder `email-writer-sb` in your code editor.
+- Navigate to the class `EmailWriterSbApplication` and click Run from the file.
+
+### 3. Frontend Setup
+- Open the folder `email-writer-react` in your code editor.
+- Run the following commands in the terminal:
+  ```bash
+  npm install
+  npm run dev
+  ```
+
+### 4. Gmail Extension Setup
+- Navigate to `chrome://extensions` in your browser.
+- Enable #### Developer Mode.
+- Click #### Load Unpacked.
+- Select the `email-writer-extension` folder inside the ReplAI directory.
+- Pin the extension to your browser.
+
+---
+
+## 🙌 Contributing
 Contributions are welcome! Please open issues or submit pull requests for improvements, bug fixes, or feature suggestions.

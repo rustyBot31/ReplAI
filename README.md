@@ -93,8 +93,8 @@ cd ReplAI
 
 ### 4. Gmail Extension Setup
 - Navigate to `chrome://extensions` in your browser.
-- Enable #### Developer Mode.
-- Click #### Load Unpacked.
+- Enable Developer Mode.
+- Click Load Unpacked.
 - Select the `email-writer-extension` folder inside the ReplAI directory.
 - Pin the extension to your browser.
 
